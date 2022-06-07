@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="script.js"></script>
+<style>
+ul {list-style-type:none;}
+form{
+  background-color: lightblue;
+}
+</style>
+</head>
+ 
+<body>
+<form action="#" name="StudentEnrolmentForm" onsubmit="return(validateHTMlform());">
+ 
+<div cellpadding="2" width="20%" bgcolor="99FFFF" align="center"
+cellspacing="2">
+ 
+<ul>
+<li>
+<center><font size=4><b>Student Enrolment Form</b></font></center>
+</li>
+</ul>
+ 
+<ul>
+<li>First Name</li>
+<li><input type=text name=firstnames id="firstname" size="30"></li>
+</ul>
+ 
+  <ul>
+<li>
+  Last Name</li>
+<li><input type=text name=lastnames id="lastname" size="30"></li>
+</ul>
+ 
+<ul>
+<li>Gender</li>
+<li><input type="radio" name="sex" value="Male" size="10">Male
+<input type="radio" name="sex" value="Female" size="10">Female</li>
+</ul>
+ 
+<ul>
+<li>Course</li>
+<li><select name="Course">
+<option value="-1" selected>Course</option>
+<option value="Computer Engineering">COE</option>
+<option value="Computer Science">CS</option>
+<option value="Information Technology">IT</option>
+</select></li>
+</ul>
+  
+ 
+</ul>
+<ul>
+<li>Email Address</li>
+<li><input type="text" name="emailadd" id="email_add" size="30"></li>
+</ul>
+
+ 
+<ul>
+<li>Mobile Number</li>
+<li><input type="text" name="mobilenumber" id="mobile_no" size="30"></li>
+</ul>
+
+<ul>
+<li><input type="reset"></li>
+<li colspan="2"><input type="submit" value="Submit Form" /></li>
+</ul>
+</div>
+</form>
+</body>
+</html>
