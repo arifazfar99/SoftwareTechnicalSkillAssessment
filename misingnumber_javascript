@@ -1,0 +1,18 @@
+//javascript
+// Function to get missing number
+    function getMissingNumber(a, n) {
+  
+        let sum = (n + 1) * (n + 2) / 2;
+        for (let i = 0; i < n; i++)
+            sum -= a[i];
+        return sum;
+    }
+ 
+    let arr1 = [7,5,6,1,4,2];
+    let arr2 = [5,3,1,2];
+    let n1 = arr1.length;
+    let n2 = arr2.length;
+    let miss1 = getMissingNumber(arr1, n1);
+    let miss2 = getMissingNumber(arr2, n2);
+    document.write("For array 1 the missing number is:",miss1)
+    document.write("For array 2 the missing number is:",miss2)
